@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"></meta>
+<title>Stock Exchanges</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+  <h2>Formulário de Empresa</h2>
+  <form action="resultGeneration" method="POST">
+    <div class="form-group">
+      <div class="col-sm-4">
+      	<label>Nome:</label>
+      	<input type="text" class="form-control" id="nameUser" name="nameUser" required/>
+      </div>
+      <div class="col-sm-8">
+      	<label>Empresa:</label>
+      	<input type="text" class="form-control" id="companyName" name="companyName" required/>
+      </div>
+      <div class="col-sm-4">
+      	<label>Valor disponivel para Compra de Ações:</label>
+      	<input type="number" class="form-control" id="bankBalance" name="bankBalance" required/>
+      </div>
+      <div class="col-sm-4">
+      	<label>Preço de Compra das Ações:</label>
+      	<input type="number" class="form-control" id="purchasePrice" name="purchasePrice" required/>
+      </div>
+      <div class="col-sm-4">
+      	<label>Preço de venda das Ações:</label>
+      	<input type="number" class="form-control" id="salePrice" name="salePrice" required/>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+    	<button type="submit" class="btn btn-default">Generate</button>
+    </div> 
+  </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="JavaScript/indexJs.js"></script>
+</body>
+</html>
